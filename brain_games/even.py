@@ -28,8 +28,8 @@ def is_even():
                 right_answers += 1
                 print("Correct!")
             else:
-                print(f"""'{answer}' is wrong answer ;(.\n
-                Correct answer was {right}.\n
+                print(f"""'{answer}' is wrong answer ;(.\
+                Correct answer was {right}.\
                 Let's try again, {name}""")
                 right_answers = 0
     print(f"Congratulations, {name}!")

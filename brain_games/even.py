@@ -21,7 +21,7 @@ def is_even():
                 Correct answer was {right}.\n
                 Let's try again, {name}""")
                 right_answers = 0
-                
+
         elif char % 2 != 0:
             right = 'no'
             if answer == right:
@@ -32,4 +32,4 @@ def is_even():
                 Correct answer was {right}.\n
                 Let's try again, {name}""")
                 right_answers = 0
-    print(f"Congratulations, {name}")
+    print(f"Congratulations, {name}!")

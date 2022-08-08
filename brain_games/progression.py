@@ -1,6 +1,5 @@
 import prompt
 from random import randint
-from random import choice
 
 def find_progression():
     name = prompt.string('May I have your name? ')
@@ -15,7 +14,7 @@ def find_progression():
         index = randint(1,len(progression))
         correct_answer = progression[index]
         progression[index] = ".."
-        
+
         print(f"Question: {progression}")
         answer = prompt.string("Your answer: ")
         result = correct_answer
@@ -27,3 +26,4 @@ def find_progression():
             print(f"""'{answer}' is wrong answer ;(.\n Correct answer was '{result}'.\n Let's try again, {name}""")
             right_answers = 0
     print(f"Congratulations, {name}")
+    

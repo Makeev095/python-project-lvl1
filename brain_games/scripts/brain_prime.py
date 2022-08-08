@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
-from brain_games.prime import is_prime 
- 
+from brain_games.prime import is_prime
+
+
 def main():
     print("Welcome to the Brain Games!")
     is_prime()
@@ -9,4 +10,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

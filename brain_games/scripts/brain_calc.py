@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-from brain_games.calc import calculator
+from brain_games.calc import calc_operations
+
 
 def main():
     print("Welcome to the Brain Games!")
-    calculator()
-
+    calc_operations()
 
 
 if __name__ == '__main__':

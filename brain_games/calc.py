@@ -25,8 +25,8 @@ def calc_operations():
             right_answers += 1
             print("Correct!")
         else:
-            print(f"""'{answer}' is wrong answer ;(.\
-            Correct answer was '{result}'.\
-            Let's try again, {name}""")
+            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.
+Let's try again, {name}!""")
             right_answers = 0
+            return 0
     print(f"Congratulations, {name}!")

@@ -29,4 +29,4 @@ def calc_operations():
             Correct answer was '{result}'.\
             Let's try again, {name}""")
             right_answers = 0
-    print(f"Congratulations, {name}")
+    print(f"Congratulations, {name}!")

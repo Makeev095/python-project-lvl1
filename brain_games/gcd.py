@@ -20,6 +20,6 @@ def find_gcd():
         else:
             print(f"""'{answer}' is wrong answer ;(.\n
             Correct answer was '{result}'.\n
-            Let's try again, {name}""")
+            Let's try again, {name}!""")
             right_answers = 0
-    print(f"Congratulations, {name}")
+    print(f"Congratulations, {name}!")

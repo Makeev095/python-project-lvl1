@@ -11,7 +11,7 @@ def calc_operations():
         operand_1 = randint(1, 100)
         operand_2 = randint(1, 100)
         operation = choice('-+*')
-        print(f"Question: {operand_1}{operation}{operand_2}")
+        print(f"Question: {operand_1} {operation} {operand_2}")
         answer = prompt.string("Your answer: ")
         if operation == '+':
             result = operand_1 + operand_2

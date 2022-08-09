@@ -15,34 +15,18 @@ def calc_operations():
         answer = prompt.string("Your answer: ")
         if operation == '+':
             result = operand_1 + operand_2
-            if result == int(answer):
-                right_answers += 1
-                print("Correct!")
-            else:
-                print(f"""'{answer}' is wrong answer ;(.\n
-                Correct answer was '{result}'.\n
-                Let's try again, {name}""")
-                right_answers = 0
 
         elif operation == '-':
             result = operand_1 - operand_2
-            if int(answer) == result:
-                right_answers += 1
-                print("Correct!")
-            else:
-                print(f"""'{answer}' is wrong answer ;(.\n
-                Correct answer was '{result}'.\n
-                Let's try again, {name}""")
-                right_answers = 0
 
         elif operation == '*':
             result = operand_1 * operand_2
-            if int(answer) == result:
-                right_answers += 1
-                print("Correct!")
-            else:
-                print(f"""'{answer}' is wrong answer ;(.\n
-                Correct answer was '{result}'.\n
-                Let's try again, {name}""")
-                right_answers = 0
+        if int(answer) == result:
+            right_answers += 1
+            print("Correct!")
+        else:
+            print(f"""'{answer}' is wrong answer ;(.\
+            Correct answer was '{result}'.\
+            Let's try again, {name}""")
+            right_answers = 0
     print(f"Congratulations, {name}")

@@ -9,13 +9,13 @@ def is_prime():
     right_answers = 0
     while right_answers != 3:
         number = randint(1, 100)
-        if number < 2:
-            return False
-        for i in range(2, int(number ** 0.5 + 1)):
-            if number % i == 0:
-                correct_answer = 'no'
-            else:
-                correct_answer = 'yes'
+        if number > 1:
+            for i in range(2, int(number/2)+1):
+                if (number % i) == 0:
+                    correct_answer = 'no'
+                else:
+                    correct_answer = 'yes'
+                    
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")
         result = correct_answer

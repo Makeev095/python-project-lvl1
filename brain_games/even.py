@@ -17,8 +17,7 @@ def is_even():
                 right_answers += 1
                 print("Correct!")
             else:
-                print(f"""'{answer}' is wrong answer ;(.Correct answer was '{right}'.\
-                    Let's try again, {name}""")
+                print(f"""'{answer}' is wrong answer ;(.Correct answer was '{right}'.\nLet's try again, {name}""")
                 right_answers = 0
 
         elif char % 2 != 0:

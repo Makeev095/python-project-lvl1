@@ -5,7 +5,7 @@ from random import randint
 def find_progression():
 
     name = prompt.string('May I have your name? ')
-    print(" What number is missing in the progression? ")
+    print("What number is missing in the progression? ")
     right_answers = 0
     while right_answers != 3:
         num1 = randint(1, 10)
@@ -15,9 +15,10 @@ def find_progression():
         progression = list(range(num1, num2, n))
         index = randint(1, len(progression))
         correct_answer = progression[index]
-        progression[index] = ".."
+        progression[index] = '..'
+        new_b = (' '.join(map(str, progression)))
 
-        print(f"Question: {progression}")
+        print(f"Question: {new_b}")
         answer = prompt.string("Your answer: ")
         result = correct_answer
 

@@ -13,7 +13,7 @@ def find_progression():
         n = randint(2, 10)
         progression = []
         progression = list(range(num1, num2, n))
-        index = randint(1, len(progression))
+        index = randint(1, len(progression)-1)
         correct_answer = progression[index]
         progression[index] = '..'
         new_b = (' '.join(map(str, progression)))

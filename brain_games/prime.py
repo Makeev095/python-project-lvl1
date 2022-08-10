@@ -10,7 +10,7 @@ def is_prime():
     while right_answers != 3:
         number = randint(1, 100)
         number > 0
-        if number % number == 0 and number % 1 == 0 and number % 2 != 0:
+        if number % number == 0 and number % 1 == 0 and (number + 1) % 2 != 0:
             correct_answer = 'yes'
         else:
             correct_answer = 'no'

@@ -1,5 +1,7 @@
 import prompt
 from random import randint
+from math import sqrt
+from itertools import count, islice
 
 
 def is_prime():
@@ -9,12 +11,12 @@ def is_prime():
     right_answers = 0
     while right_answers != 3:
         number = randint(1, 100)
-        if number > 1:
-            for i in range(2, int(number / 2) + 1):
-                if (number % i) == 0:
-                    correct_answer = 'no'
-                else:
-                    correct_answer = 'yes'
+        if number < 2:
+            correct_answer = 'no'
+        for number in islice(count(2), int(sqrt(number) - 1)):
+            if not number % number:
+                correct_answer = 'no'
+        correct_answer = 'yes'
 
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")
@@ -27,5 +29,4 @@ def is_prime():
 Let's try again, {name}!""")
             right_answers = 0
             return 0
-        print(f"Congratulations, {name}!")
-    return 0
+    print(f"Congratulations, {name}!")

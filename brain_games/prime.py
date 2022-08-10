@@ -10,7 +10,7 @@ def is_prime():
     while right_answers != 3:
         number = randint(1, 100)
         if number > 1:
-            for i in range(2, int(number/2)+1):
+            for i in range(2, int(number / 2) + 1):
                 if (number % i) == 0:
                     correct_answer = 'no'
                 else:
@@ -28,4 +28,3 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-    

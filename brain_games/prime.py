@@ -11,10 +11,8 @@ def is_prime():
     right_answers = 0
     while right_answers != 3:
         number = randint(1, 100)
-        if number < 2:
-            correct_answer = 'no'
-        for number in islice(count(2), int(sqrt(number) - 1)):
-            if not number % number:
+        for i in range(2, (number//2)+1):
+            if number % i == 0:
                 correct_answer = 'no'
         correct_answer = 'yes'
 

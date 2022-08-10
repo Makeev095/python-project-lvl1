@@ -12,7 +12,8 @@ def is_prime():
         for i in range(2, (number // 2) + 1):
             if number % i == 0:
                 correct_answer = 'no'
-        correct_answer = 'yes'
+            else:
+                correct_answer = 'yes'
 
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")

@@ -28,4 +28,4 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-    return 0
+    return 1

@@ -12,9 +12,9 @@ def is_prime():
         if number > 1:
             for i in range(2, int(number / 2) + 1):
                 if (number % i) == 0:
-                    correct_answer = 'yes'
-                else:
                     correct_answer = 'no'
+                else:
+                    correct_answer = 'yes'
         else:
             correct_answer = 'no'
 

@@ -14,11 +14,9 @@ def is_prime():
                 if (number % i) == 0:
                     correct_answer = 'yes'
                 else:
-                    correct_answer = 'yes'
+                    correct_answer = 'no'
         else:
             correct_answer = 'no'
-
-        correct_answer = 'yes'
 
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")

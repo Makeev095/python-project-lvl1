@@ -1,7 +1,5 @@
 import prompt
 from random import randint
-from math import sqrt
-from itertools import count, islice
 
 
 def is_prime():
@@ -11,7 +9,7 @@ def is_prime():
     right_answers = 0
     while right_answers != 3:
         number = randint(1, 100)
-        for i in range(2, (number//2)+1):
+        for i in range(2, (number // 2) + 1):
             if number % i == 0:
                 correct_answer = 'no'
         correct_answer = 'yes'

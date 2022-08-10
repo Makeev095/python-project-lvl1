@@ -27,4 +27,4 @@ def is_prime():
 Let's try again, {name}!""")
             right_answers = 0
             return 0
-    print(f"Congratulations, {name}!")
+        print(f"Congratulations, {name}!")

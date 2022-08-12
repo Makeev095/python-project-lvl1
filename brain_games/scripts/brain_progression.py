@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from games.progression import find_progression
+from brain_games.games.progression import find_progression
 
 
 def main():

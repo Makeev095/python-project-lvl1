@@ -16,7 +16,7 @@ def is_prime():
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        print(f"Question: {number}")
+        print(f"Question:{number}")
         answer = prompt.string("Your answer: ")
         result = correct_answer
         if answer == result:

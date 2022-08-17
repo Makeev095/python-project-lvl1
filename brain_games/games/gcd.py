@@ -3,6 +3,18 @@ from random import randint
 import math
 
 
+def logic_gcd():
+
+    number_1 = randint(1, 100)
+    number_2 = randint(1, 100)
+    print(f"Question: {number_1} {number_2}")
+    answer = prompt.string("Your answer: ")
+    result = math.gcd(number_1, number_2)
+
+def question_gcd():
+
+    print("""Find the greatest common divisor of given numbers.""")
+
 def find_gcd():
 
     name = prompt.string('May I have your name? ')

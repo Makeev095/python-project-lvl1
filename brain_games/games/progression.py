@@ -16,9 +16,9 @@ def find_progression():
         index = randint(1, len(progression) - 1)
         correct_answer = progression[index]
         progression[index] = '..'
-        new_b = (' '.join(map(str, progression)))
+        new_progression = (' '.join(map(str, progression)))
 
-        print(f"Question: {new_b}")
+        print(f"Question: {new_progression}")
         answer = prompt.string("Your answer: ")
         result = correct_answer
 

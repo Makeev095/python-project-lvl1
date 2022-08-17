@@ -12,14 +12,14 @@ def is_even():
         print(f"Question: {char}")
         answer = prompt.string("Your answer: ")
         if char % 2 == 0:
-            right = 'yes'
+            result = 'yes'
         elif char % 2 != 0:
-            right = 'no'
-        if answer == right:
+            result = 'no'
+        if answer == result:
             right_answers += 1
             print("Correct!")
         else:
-            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{right}'.
+            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.
 Let's try again, {name}!""")
             right_answers = 0
             return 0

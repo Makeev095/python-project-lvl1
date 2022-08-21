@@ -3,13 +3,26 @@ from random import randint
 import math
 
 
-def logic_gcd():
+start = 1
+end = 100
+number_1 = randint(start, end)
+number_2 = randint(start, end)
+print(f"Question: {number_1} {number_2}")
+answer = prompt.string("Your answer: ")
+result = math.gcd(number_1, number_2)
+name = prompt.string('May I have your name? ')
+question_gdc = print("""Find the greatest common divisor of given numbers.""")
 
-    number_1 = randint(1, 100)
-    number_2 = randint(1, 100)
-    print(f"Question: {number_1} {number_2}")
-    answer = prompt.string("Your answer: ")
+
+def result_getting_gcd():
     result = math.gcd(number_1, number_2)
+
+def logic_gcd():
+    start = 1
+    end = 100
+    number_1 = randint(start, end)
+    number_2 = randint(start, end)
+    print(f"Question: {number_1} {number_2}")
 
 def question_gcd():
 
@@ -21,8 +34,10 @@ def find_gcd():
     print("""Find the greatest common divisor of given numbers.""")
     right_answers = 0
     while right_answers != 3:
-        number_1 = randint(1, 100)
-        number_2 = randint(1, 100)
+        start = 1
+        end = 100
+        number_1 = randint(start, end)
+        number_2 = randint(start, end)
         print(f"Question: {number_1} {number_2}")
         answer = prompt.string("Your answer: ")
         result = math.gcd(number_1, number_2)

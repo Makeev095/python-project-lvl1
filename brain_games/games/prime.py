@@ -15,9 +15,12 @@ def prime_logic():
     print(f"Question: {number}")
     answer = prompt.string("Your answer: ")
     result = correct_answer
+    return result, answer
+
 
 def prime_question():
     print("""Answer "yes" if given number is prime. Otherwise answer "no".""")
+
 
 def is_prime():
 

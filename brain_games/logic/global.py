@@ -16,7 +16,7 @@ def drive(right_answers):
         answer_check
 
 
-def answer_check(answer, result, name):
+def answer_check(answer, result, name, right_answers):
     info_gcd
     get_answer
     if int(answer) == result:

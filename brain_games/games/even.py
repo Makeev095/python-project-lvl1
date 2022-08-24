@@ -24,3 +24,21 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
+
+
+def even_info():
+    right_answers = 0
+    char = randint(1, 1000)
+    print(f"Question: {char}")
+    answer = prompt.string("Your answer: ")
+    if char % 2 == 0:
+        result = 'yes'
+    elif char % 2 != 0:
+        result = 'no'
+    return answer, result, right_answers
+
+
+def even_question():
+    print("""Answer "yes" if the number is even, otherwise answer "no".""")
+    right_answers = 0
+    return right_answers

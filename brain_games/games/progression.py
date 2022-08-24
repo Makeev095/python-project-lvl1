@@ -31,3 +31,27 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
+
+
+def progression_info():
+    right_answers = 0
+    num1 = randint(1, 10)
+    num2 = randint(80, 100)
+    n = randint(2, 10)
+    progression = []
+    progression = list(range(num1, num2, n))
+    index = randint(1, len(progression) - 1)
+    correct_answer = progression[index]
+    progression[index] = '..'
+    new_progression = (' '.join(map(str, progression)))
+
+    print(f"Question: {new_progression}")
+    answer = prompt.string("Your answer: ")
+    result = correct_answer
+    return answer, result, right_answers
+
+
+def progression_question():
+    print("What number is missing in the progression? ")
+    right_answers = 0
+    return right_answers

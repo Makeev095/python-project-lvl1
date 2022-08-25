@@ -1,30 +1,22 @@
-from brain_games.games.gcd import info_gcd, gcd_question
-from brain_games.games.cli import welcome_user, get_answer
-from brain_games.games.calc import calc_question, calc_info
-from brain_games.games.progression import progression_info, progression_question
-from brain_games.games.even import even_info, even_question
-from brain_games.games.prime import prime_info, prime_question
+from brain_games.games.calc import calc_info
+from brain_games.games.cli import welcome_user
+from brain_games.games.even import even_info
+from brain_games.games.gcd import gcd_logic
+from brain_games.games.progression import progression_info
+from brain_games.games.prime import prime_info
 
 
-def drive(right_answers):
+def drive(task, answer, name, result):
     welcome_user
-    gcd_question
-    calc_question
-    even_question
-    progression_question
-    prime_question
+    print(name)
+    print(task)
     right_answers = 0
     while right_answers != 3:
-        answer_check
-
-
-def answer_check(answer, result, name, right_answers):
-    info_gcd
-    calc_info
-    even_info
-    progression_info
-    prime_info
-    get_answer
+        gcd_logic
+        prime_info
+        progression_info
+        calc_info
+        even_info
     if int(answer) == result:
         right_answers += 1
         print("Correct!")

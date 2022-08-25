@@ -5,7 +5,7 @@ from random import randint
 def find_progression():
 
     name = prompt.string('May I have your name? ')
-    problem = print("What number is missing in the progression? ")
+    task = print("What number is missing in the progression? ")
     right_answers = 0
     while right_answers != 3:
         num1 = randint(1, 10)
@@ -31,7 +31,7 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-    return problem, answer, name, result
+    return task, answer, name, result
 
 
 def progression_info():

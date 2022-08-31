@@ -1,22 +1,17 @@
-from brain_games.games.calc import calc_info
+from brain_games.games.calc import calc_description, calc_generate
 from brain_games.games.cli import welcome_user
-from brain_games.games.even import even_info
-from brain_games.games.gcd import gcd_logic
-from brain_games.games.progression import progression_info
-from brain_games.games.prime import prime_info
+import prompt
 
 
-def drive(task, answer, name, result):
+def run(task, result):
     welcome_user
-    print(name)
+    name = prompt.string('May I have your name? ')
     print(task)
     right_answers = 0
     while right_answers != 3:
-        gcd_logic
-        prime_info
-        progression_info
-        calc_info
-        even_info
+        print(calc_description)
+        answer = prompt.string("Your answer: ")
+        calc_generate()
     if int(answer) == result:
         right_answers += 1
         print("Correct!")

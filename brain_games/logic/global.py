@@ -1,15 +1,16 @@
-from brain_games.games.calc import calc_description, calc_generate
+from brain_games.games.calc import *
 from brain_games.games.cli import welcome_user
 import prompt
 
 
-def run(task, result):
-    welcome_user
+def run(task_1, result, name, answer, question_calc):
+    welcome_user()
     name = prompt.string('May I have your name? ')
-    print(task)
+    print(task_1)
     right_answers = 0
     while right_answers != 3:
-        print(calc_description)
+        calc_description()
+        print(question_calc)
         answer = prompt.string("Your answer: ")
         calc_generate()
     if int(answer) == result:

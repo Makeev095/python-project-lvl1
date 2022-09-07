@@ -7,7 +7,7 @@ def calc_operations():
     name = prompt.string('May I have your name? ')
     task_1 = print("""What is the result of the expression? """)
     right_answers = 0
-    while right_answers != 3:
+    for right_answers in range(3):
         operand_1 = randint(1, 100)
         operand_2 = randint(1, 100)
         operation = choice('-+*')
@@ -30,15 +30,19 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-    return task_1, answer, name, right_answers
+    return task_1, answer, name, right_answers, operand_1, operand_2, operation, result
 
+
+def calc_question():
+    task_1 = """What is the result of the expression? """
+    return task_1
 
 def calc_description():
     operand_1 = randint(1, 100)
     operand_2 = randint(1, 100)
     operation = choice('-+*')
-    question_1 = print(f"Question: {operand_1} {operation} {operand_2}")
-    return operand_1, operand_2, operation, question_1
+    print(f"Question: {operand_1} {operation} {operand_2}")
+    return operand_1, operand_2, operation
 
 
 def calc_generate(operation, operand_1, operand_2):

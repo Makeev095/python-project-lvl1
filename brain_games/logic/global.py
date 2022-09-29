@@ -1,4 +1,4 @@
-from brain_games.games.calc import calc_operations
+from brain_games.games.calc import calc_operations, calc_description
 from brain_games.games.cli import welcome_user
 import prompt
 
@@ -10,6 +10,7 @@ def run():
     print(task)
     right_answers = 0
     for right_answers in range(3):
+        calc_description()
         answer = prompt.string("Your answer: ")
         if int(answer) == result:
             right_answers += 1

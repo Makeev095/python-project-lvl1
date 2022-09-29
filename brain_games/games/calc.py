@@ -39,3 +39,18 @@ Let's try again, {name}!""")
             return 0
     print(f"Congratulations, {name}!")
     return answer, result, task
+
+
+def calc_description():
+    operand_1 = randint(1, 100)
+    operand_2 = randint(1, 100)
+    operation = choice('-+*')
+    if operation == '+':
+        result = operand_1 + operand_2
+
+    elif operation == '-':
+        result = operand_1 - operand_2
+
+    elif operation == '*':
+        result = operand_1 * operand_2
+    return result

@@ -3,7 +3,7 @@ from brain_games.games.cli import welcome_user
 import prompt
 
 
-def run(game):
+def run():
     answer, result, task = calc_description()
     welcome_user()
     name = prompt.string('May I have your name? ')

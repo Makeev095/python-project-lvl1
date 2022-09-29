@@ -5,13 +5,13 @@ from random import randint
 def is_even():
 
     name = prompt.string('May I have your name? ')
-    task = print("""Answer "yes" if the number is even, \
-        otherwise answer "no".""")
+    print("""Answer "yes" if the number is even, otherwise answer "no".""")
     right_answers = 0
     while right_answers != 3:
         char = randint(1, 1000)
         print(f"Question: {char}")
         answer = prompt.string("Your answer: ")
+        answer = answer
         if char % 2 == 0:
             result = 'yes'
         elif char % 2 != 0:
@@ -25,9 +25,3 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-    return task, answer, name, result
-
-
-def even_info():
-    char = randint(1, 1000)
-    print(f"Question: {char}")

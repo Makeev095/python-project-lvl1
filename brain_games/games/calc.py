@@ -10,19 +10,6 @@ operation = choice('-+*')
 question_calc = f"Question: {operand_1} {operation} {operand_2}"
 
 
-def description():
-    if operation == '+':
-        result = operand_1 + operand_2
-
-    elif operation == '-':
-        result = operand_1 - operand_2
-
-    elif operation == '*':
-        result = operand_1 * operand_2
-    print(question_calc)
-    return result
-
-
 def calc_operations():
     name = prompt.string('May I have your name? ')
     print(task)
@@ -31,7 +18,16 @@ def calc_operations():
         operand_1 = randint(1, 100)
         operand_2 = randint(1, 100)
         operation = choice('-+*')
-        description(operand_1, operand_2, operation)
+        if operation == '+':
+            result = operand_1 + operand_2
+
+        elif operation == '-':
+            result = operand_1 - operand_2
+
+        elif operation == '*':
+            result = operand_1 * operand_2
+
+        print(question_calc)
         answer = prompt.string("Your answer: ")
         if int(answer) == result:
             right_answers += 1
@@ -42,3 +38,22 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
+
+
+def calc_description():
+    task = """What is the result of the expression? """
+    operand_1 = randint(1, 100)
+    operand_2 = randint(1, 100)
+    operation = choice('-+*')
+    if operation == '+':
+        result = operand_1 + operand_2
+
+    elif operation == '-':
+        result = operand_1 - operand_2
+
+    elif operation == '*':
+        result = operand_1 * operand_2
+
+    print(question_calc)
+    answer = prompt.string("Your answer: ")
+    return answer, result, task

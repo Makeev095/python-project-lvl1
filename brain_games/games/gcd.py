@@ -25,11 +25,3 @@ Let's try again, {name}!""")
             return 0
     print(f"Congratulations, {name}!")
     return task, answer, name, result
-
-
-def gcd_logic():
-    start = 1
-    end = 100
-    number_1 = randint(start, end)
-    number_2 = randint(start, end)
-    print(f"Question: {number_1} {number_2}")

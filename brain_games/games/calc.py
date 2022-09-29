@@ -38,22 +38,4 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-
-
-def calc_description():
-    task = """What is the result of the expression? """
-    operand_1 = randint(1, 100)
-    operand_2 = randint(1, 100)
-    operation = choice('-+*')
-    if operation == '+':
-        result = operand_1 + operand_2
-
-    elif operation == '-':
-        result = operand_1 - operand_2
-
-    elif operation == '*':
-        result = operand_1 * operand_2
-
-    print(question_calc)
-    answer = prompt.string("Your answer: ")
     return answer, result, task

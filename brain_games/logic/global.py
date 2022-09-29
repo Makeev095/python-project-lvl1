@@ -1,10 +1,10 @@
-from brain_games.games.calc import calc_description
+from brain_games.games.calc import calc_operations
 from brain_games.games.cli import welcome_user
 import prompt
 
 
 def run():
-    answer, result, task = calc_description()
+    answer, result, task = calc_operations()
     welcome_user()
     name = prompt.string('May I have your name? ')
     print(task)

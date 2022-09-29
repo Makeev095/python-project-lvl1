@@ -36,7 +36,6 @@ def calc_operations():
             print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.
 Let's try again, {name}!""")
             right_answers = 0
-            return 0
     print(f"Congratulations, {name}!")
     return answer, result, task
 

@@ -20,7 +20,7 @@ def is_even():
             right_answers += 1
             print("Correct!")
         else:
-            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.
+            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.\
 Let's try again, {name}!""")
             right_answers = 0
             return 0

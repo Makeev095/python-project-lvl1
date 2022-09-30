@@ -20,13 +20,13 @@ def find_progression():
 
         print(f"Question: {new_progression}")
         answer = prompt.string("Your answer: ")
-        result = correct_answer
+        res = correct_answer
 
-        if int(answer) == result:
+        if int(answer) == res:
             right_answers += 1
             print("Correct!")
         else:
-            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.
+            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{res}'.
 Let's try again, {name}!""")
             right_answers = 0
             return 0

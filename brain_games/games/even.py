@@ -11,16 +11,15 @@ def is_even():
         char = randint(1, 1000)
         print(f"Question: {char}")
         answer = prompt.string("Your answer: ")
-        answer = answer
         if char % 2 == 0:
-            result = 'yes'
+            res = 'yes'
         elif char % 2 != 0:
-            result = 'no'
-        if answer == result:
+            res = 'no'
+        if answer == res:
             right_answers += 1
             print("Correct!")
         else:
-            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.\
+            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{res}'.
 Let's try again, {name}!""")
             right_answers = 0
             return 0

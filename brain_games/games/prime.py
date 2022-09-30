@@ -17,12 +17,12 @@ def is_prime():
             correct_answer = 'no'
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")
-        result = correct_answer
-        if answer == result:
+        res = correct_answer
+        if answer == res:
             right_answers += 1
             print("Correct!")
         else:
-            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.)\
+            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{res}'.)
 Let's try again, {name}!""")
             right_answers = 0
             return 0

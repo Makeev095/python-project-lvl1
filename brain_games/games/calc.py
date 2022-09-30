@@ -12,21 +12,21 @@ def calc_operations():
         operand_2 = randint(1, 100)
         operation = choice('-+*')
         if operation == '+':
-            result = operand_1 + operand_2
+            res = operand_1 + operand_2
 
         elif operation == '-':
-            result = operand_1 - operand_2
+            res = operand_1 - operand_2
 
         elif operation == '*':
-            result = operand_1 * operand_2
+            res = operand_1 * operand_2
 
         print(f"Question: {operand_1} {operation} {operand_2}")
         answer = prompt.string("Your answer: ")
-        if int(answer) == result:
+        if int(answer) == res:
             right_answers += 1
             print("Correct!")
         else:
-            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{result}'.\
+            print(f"""'{answer}' is wrong answer ;(.Correct answer was '{res}'.
 Let's try again, {name}!""")
             right_answers = 0
             return 0

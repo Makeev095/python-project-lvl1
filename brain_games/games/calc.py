@@ -31,3 +31,23 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
+
+
+def get_question():
+    question = """What is the result of the expression? """
+    return question
+
+
+def discription():
+    operand_1 = randint(1, 100)
+    operand_2 = randint(1, 100)
+    operation = choice('-+*')
+    if operation == '+':
+        res = operand_1 + operand_2
+
+    elif operation == '-':
+        res = operand_1 - operand_2
+
+    elif operation == '*':
+        res = operand_1 * operand_2
+    return res

@@ -31,3 +31,8 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
+
+
+def get_question():
+    question = "What number is missing in the progression?"
+    return question

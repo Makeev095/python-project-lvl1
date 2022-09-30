@@ -24,3 +24,8 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
+
+
+def get_question():
+    question = """Answer "yes" if the number is even, otherwise answer "no"."""
+    return question

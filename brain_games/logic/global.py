@@ -1,13 +1,8 @@
 import prompt
 from brain_games.games import calc
-from brain_games.games import gcd
-from brain_games.games import prime
-from brain_games.games import even
-from brain_games.games import progression
 
 
-
-def run(game):
+def run():
     name = prompt.string('May I have your name? ')
     right_answers = 0
     for right_answers in range(3):

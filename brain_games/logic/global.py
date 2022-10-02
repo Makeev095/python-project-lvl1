@@ -1,9 +1,11 @@
 import prompt
 from brain_games.games import calc
+from brain_games.scripts.brain_games import main
 
 
 def run():
-    name = prompt.string('May I have your name? ')
+    print("Welcome to the Brain Games!")
+    name = prompt.string('May I have your name?')
     right_answers = 0
     for right_answers in range(3):
         question = calc.get_question()

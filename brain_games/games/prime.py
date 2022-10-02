@@ -2,11 +2,13 @@ import prompt
 from random import randint
 
 
+quest = """Answer "yes" if given number is prime. Otherwise answer "no"."""
+
+
 def is_prime():
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    print("""Answer "yes" if given number is prime.
-Otherwise answer "no".""")
+    print(quest)
     right_answers = 0
     while right_answers != 3:
         number = randint(1, 100)

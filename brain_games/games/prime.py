@@ -5,7 +5,8 @@ from random import randint
 def is_prime():
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    print("""Answer "yes" if given number is prime. Otherwise answer "no".""")
+    print("""Answer "yes" if given number is prime.
+Otherwise answer "no".""")
     right_answers = 0
     while right_answers != 3:
         number = randint(1, 100)

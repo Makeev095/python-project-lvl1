@@ -34,5 +34,5 @@ Let's try again, {name}!""")
 
 
 def get_question():
-    question = """Answer "yes" if given number is prime. Otherwise answer "no"."""
-    return question
+    quest = """Answer "yes" if given number is prime. Otherwise answer "no"."""
+    return quest

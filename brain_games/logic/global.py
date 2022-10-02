@@ -1,6 +1,5 @@
 import prompt
 from brain_games.games import calc
-from brain_games.scripts.brain_games import main
 
 
 def run():

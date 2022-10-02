@@ -5,6 +5,7 @@ import math
 
 def find_gcd():
     name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
     print("""Find the greatest common divisor of given numbers.""")
     right_answers = 0
     while right_answers != 3:
@@ -26,6 +27,6 @@ Let's try again, {name}!""")
     print(f"Congratulations, {name}!")
 
 
-def get_answer_and_question():
+def get_question():
     question = """Find the greatest common divisor of given numbers."""
     return question

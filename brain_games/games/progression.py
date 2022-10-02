@@ -5,6 +5,7 @@ from random import randint
 def find_progression():
 
     name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
     print("What number is missing in the progression? ")
     right_answers = 0
     while right_answers != 3:

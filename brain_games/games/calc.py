@@ -5,6 +5,7 @@ from random import choice
 
 def calc_operations():
     name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
     print("""What is the result of the expression? """)
     right_answers = 0
     for right_answers in range(3):

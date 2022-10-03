@@ -6,7 +6,8 @@ def is_even():
 
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    print("""Answer "yes" if number even otherwise answer "no".""")
+    print("""Answer "yes" if the number is even, \
+otherwise answer "no".""")
     right_answers = 0
     while right_answers != 3:
         char = randint(1, 1000)

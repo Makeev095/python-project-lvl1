@@ -7,6 +7,33 @@ operand_1 = randint(1, 100)
 operand_2 = randint(1, 100)
 operation = choice('-+*')
 
+def discription():
+
+    operand_1 = randint(1, 100)
+    operand_2 = randint(1, 100)
+    operation = choice('-+*')
+    if operation == '+':
+        res = operand_1 + operand_2
+
+    elif operation == '-':
+        res = operand_1 - operand_2
+
+    elif operation == '*':
+        res = operand_1 * operand_2
+
+    return res
+
+
+def question_game():
+    question = """What is the result of the expression? """
+    return question
+
+
+def give_question():
+    question_for_user = f"Question: {operand_1} {operation} {operand_2}"
+
+    return question_for_user
+
 
 def calc_operations():
     name = prompt.string('May I have your name? ')
@@ -38,24 +65,3 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-    return operand_1, operation, operand_2
-
-
-def get_question():
-    question = """What is the result of the expression? """
-    return question
-
-
-def discription():
-    operand_1 = randint(1, 100)
-    operand_2 = randint(1, 100)
-    operation = choice('-+*')
-    if operation == '+':
-        res = operand_1 + operand_2
-
-    elif operation == '-':
-        res = operand_1 - operand_2
-
-    elif operation == '*':
-        res = operand_1 * operand_2
-    return res

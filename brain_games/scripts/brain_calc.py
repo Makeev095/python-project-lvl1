@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from brain_games.games import calc
-import engine_games
+from brain_games import engine_games
 
 
 def main():

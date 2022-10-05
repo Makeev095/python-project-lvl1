@@ -3,6 +3,11 @@ from random import randint
 from random import choice
 
 
+operand_1 = randint(1, 100)
+operand_2 = randint(1, 100)
+operation = choice('-+*')
+
+
 def calc_operations():
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
@@ -21,7 +26,8 @@ def calc_operations():
         elif operation == '*':
             res = operand_1 * operand_2
 
-        print(f"Question: {operand_1} {operation} {operand_2}")
+        problem = f"Question: {operand_1} {operation} {operand_2}"
+        print(problem)
         answer = prompt.string("Your answer: ")
         if int(answer) == res:
             right_answers += 1
@@ -32,6 +38,7 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
+    return operand_1, operation, operand_2
 
 
 def get_question():

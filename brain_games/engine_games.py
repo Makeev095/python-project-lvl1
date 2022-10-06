@@ -1,5 +1,5 @@
 import prompt
-from brain_games.games import calc
+from brain_games.scripts.brain_calc import calc
 
 
 def run(game):
@@ -10,7 +10,8 @@ def run(game):
     print(f"Hello, {name}!")
     while right_answers < 3:
         print(game.question_game())
-        print(calc.give_question())
+        result = calc.give_question()
+        print(result)
         answer = prompt.string("Your answer: ")
         res = game.discription()
         if int(answer) == res:

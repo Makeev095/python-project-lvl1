@@ -7,11 +7,9 @@ operand_1 = randint(1, 100)
 operand_2 = randint(1, 100)
 operation = choice('-+*')
 
+
 def discription():
 
-    operand_1 = randint(1, 100)
-    operand_2 = randint(1, 100)
-    operation = choice('-+*')
     if operation == '+':
         res = operand_1 + operand_2
 

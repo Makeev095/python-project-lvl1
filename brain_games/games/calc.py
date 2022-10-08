@@ -9,17 +9,22 @@ operation = choice('-+*')
 
 
 def discription():
+    for _ in range(3):
+        operand_1 = randint(1, 100)
+        operand_2 = randint(1, 100)
+        operation = choice('-+*')
+        if operation == '+':
+            res = operand_1 + operand_2
 
-    if operation == '+':
-        res = operand_1 + operand_2
+        elif operation == '-':
+            res = operand_1 - operand_2
 
-    elif operation == '-':
-        res = operand_1 - operand_2
+        elif operation == '*':
+            res = operand_1 * operand_2
 
-    elif operation == '*':
-        res = operand_1 * operand_2
+        question_for_user = f"Question: {operand_1} {operation} {operand_2}"
 
-    return res
+        return res, question_for_user
 
 
 def question_game():
@@ -64,4 +69,3 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-    return operand_1, operation, operand_2

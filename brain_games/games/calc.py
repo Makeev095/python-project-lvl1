@@ -64,3 +64,4 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
+    return operand_1, operation, operand_2

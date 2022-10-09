@@ -1,9 +1,10 @@
 import prompt
+from brain_games.games import even
 from brain_games.scripts.brain_calc import calc
 
 
 def run(game):
-    game = calc
+    game = even
     right_answers = 0
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name?')
@@ -12,8 +13,8 @@ def run(game):
         res, result = game.discription()
         print(game.game_question())
         print(result)
-        answer = prompt.string("Your answer: ")
-        if int(answer) == res:
+        answer = game.getting_answer()
+        if answer == res:
             print("Correct!")
             right_answers += 1
         else:

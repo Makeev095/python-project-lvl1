@@ -21,6 +21,12 @@ def discription():
 
         return res, question_for_user
 
+def getting_answer():
+
+    answer = prompt.string("Your answer: ")
+    answer = int(answer)
+    
+    return answer
 
 def game_question():
     question = """What is the result of the expression? """
@@ -48,7 +54,8 @@ def calc_operations():
         problem = f"Question: {operand_1} {operation} {operand_2}"
         print(problem)
         answer = prompt.string("Your answer: ")
-        if int(answer) == res:
+        answer = int(answer)
+        if answer == res:
             right_answers += 1
             print("Correct!")
         else:

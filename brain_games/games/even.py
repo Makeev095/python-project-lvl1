@@ -15,6 +15,13 @@ def discription():
         return res, question_for_user
 
 
+def getting_answer():
+
+    answer = prompt.string("Your answer: ")
+
+    return answer
+
+
 def game_question():
 
     question = """Answer "yes" if the number is even, \

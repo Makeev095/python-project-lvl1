@@ -2,10 +2,12 @@ import prompt
 from brain_games.games import prime
 from brain_games.games import calc
 from brain_games.games import even
+from brain_games.games import progression
+from brain_games.games import gcd
 
 
 def run(game):
-    game = prime
+    game = gcd
     right_answers = 0
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name?')

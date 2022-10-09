@@ -21,12 +21,14 @@ def discription():
 
         return res, question_for_user
 
+
 def getting_answer():
 
     answer = prompt.string("Your answer: ")
     answer = int(answer)
-    
+
     return answer
+
 
 def game_question():
     question = """What is the result of the expression? """

@@ -2,6 +2,27 @@ import prompt
 from random import randint
 
 
+def discription():
+
+    for _ in range(3):
+        char = randint(1, 1000)
+        question_for_user = f"Question: {char}"
+        if char % 2 == 0:
+            res = 'yes'
+        elif char % 2 != 0:
+            res = 'no'
+
+        return res, question_for_user
+
+
+def game_question():
+
+    question = """Answer "yes" if the number is even, \
+otherwise answer "no"."""
+
+    return question
+
+
 def is_even():
 
     name = prompt.string('May I have your name? ')
@@ -26,8 +47,3 @@ Let's try again, {name}!""")
             right_answers = 0
             return 0
     print(f"Congratulations, {name}!")
-
-
-def get_question():
-    question = """Answer "yes" if the number is even, otherwise answer "no"."""
-    return question

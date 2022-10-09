@@ -22,7 +22,7 @@ def discription():
         return res, question_for_user
 
 
-def question_game():
+def game_question():
     question = """What is the result of the expression? """
     return question
 

@@ -10,7 +10,7 @@ def run(game):
     print(f"Hello, {name}!")
     for right_answers in range(3):
         res, result = game.discription()
-        print(game.question_game())
+        print(game.game_question())
         print(result)
         answer = prompt.string("Your answer: ")
         if int(answer) == res:

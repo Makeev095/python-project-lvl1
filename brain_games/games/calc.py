@@ -3,11 +3,6 @@ from random import randint
 from random import choice
 
 
-operand_1 = randint(1, 100)
-operand_2 = randint(1, 100)
-operation = choice('-+*')
-
-
 def discription():
     for _ in range(3):
         operand_1 = randint(1, 100)
@@ -30,13 +25,6 @@ def discription():
 def question_game():
     question = """What is the result of the expression? """
     return question
-
-
-def give_question():
-
-    question_for_user = f"Question: {operand_1} {operation} {operand_2}"
-
-    return question_for_user
 
 
 def calc_operations():

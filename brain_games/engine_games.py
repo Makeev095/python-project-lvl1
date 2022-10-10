@@ -12,9 +12,10 @@ def run(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name?')
     print(f"Hello, {name}!")
+    question = game.game_question()
+    print(question)
     for right_answers in range(3):
         res, result = game.discription()
-        print(game.game_question())
         print(result)
         answer = game.getting_answer()
         if answer == res:

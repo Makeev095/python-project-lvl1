@@ -7,7 +7,7 @@ from brain_games.games import gcd
 
 
 def run(game):
-    game = gcd
+    game = prime
     right_answers = 0
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name?')

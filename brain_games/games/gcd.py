@@ -12,13 +12,14 @@ def discription():
         number_2 = randint(start, end)
         res = math.gcd(number_1, number_2)
         question_for_user = f"Question: {number_1} {number_2}"
+        
 
         return res, question_for_user
 
 
 def getting_answer():
 
-    answer = prompt.string("Your answer: ")
+    answer = int(input("Your answer: "))
     answer = int(answer)
 
     return answer
@@ -42,8 +43,8 @@ def find_gcd():
         number_1 = randint(start, end)
         number_2 = randint(start, end)
         print(f"Question: {number_1} {number_2}")
-        answer = prompt.string("Your answer: ")
         res = math.gcd(number_1, number_2)
+        answer = prompt.string("Your answer: ")
         if int(answer) == res:
             right_answers += 1
             print("Correct!")

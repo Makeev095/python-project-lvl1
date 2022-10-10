@@ -24,7 +24,7 @@ def discription():
 
 def getting_answer():
 
-    answer = prompt.string("Your answer: ")
+    answer = int(input("Your answer: "))
     answer = int(answer)
 
     return answer

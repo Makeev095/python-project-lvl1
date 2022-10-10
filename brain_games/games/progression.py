@@ -22,13 +22,14 @@ def discription():
 
 def getting_answer():
 
-    answer = prompt.string("Your answer: ")
+    answer = int(input("Your answer: "))
     answer = int(answer)
 
     return answer
 
 
 def game_question():
+
     question = "What number is missing in the progression? "
 
     return question

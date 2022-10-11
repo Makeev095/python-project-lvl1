@@ -12,7 +12,6 @@ def discription():
         number_2 = randint(start, end)
         res = math.gcd(number_1, number_2)
         question_for_user = f"Question: {number_1} {number_2}"
-        
 
         return res, question_for_user
 

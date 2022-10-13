@@ -1,34 +1,23 @@
 from random import randint
 
 
-def discription():
+QUESTION = "What number is missing in the progression? "
 
-    for _ in range(3):
-        num1 = randint(1, 10)
-        num2 = randint(80, 100)
-        n = randint(2, 10)
-        progression = []
-        progression = list(range(num1, num2, n))
-        index = randint(1, len(progression) - 1)
-        res = progression[index]
-        progression[index] = '..'
-        new_progression = (' '.join(map(str, progression)))
-
-        question_for_user = f"Question: {new_progression}"
-
-        return res, question_for_user
+answer_type = int
 
 
-def getting_answer():
+def generate_round():
 
-    answer = int(input("Your answer: "))
-    answer = int(answer)
+    num1 = randint(1, 10)
+    num2 = randint(80, 100)
+    n = randint(2, 10)
+    progression = []
+    progression = list(range(num1, num2, n))
+    index = randint(1, len(progression) - 1)
+    res = progression[index]
+    progression[index] = '..'
+    new_progression = (' '.join(map(str, progression)))
 
-    return answer
+    question_info = new_progression
 
-
-def game_question():
-
-    question = "What number is missing in the progression? "
-
-    return question
+    return res, question_info
